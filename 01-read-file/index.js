@@ -1,4 +1,4 @@
-const {stdout} = process;
+const { stdout } = process;
 
 const path = require('path');
 const fs = require('fs');

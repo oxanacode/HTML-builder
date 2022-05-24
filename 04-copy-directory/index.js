@@ -19,9 +19,7 @@ const folderCopyPath= path.join(__dirname, 'files-copy');
               if (err) console.log(err.message);
             });
           }
-          if (file.isDirectory()) {                                    
-            copyFolder(pathInit, pathCopy);
-          }
+          if (file.isDirectory()) copyFolder(pathInit, pathCopy);
         });
       });
     });
