@@ -16,7 +16,7 @@ const folderCopyPath= path.join(__dirname, 'files-copy');
           const pathCopy = path.join(folderCopy, file.name);
           if (file.isFile()) {                                        
             fs.copyFile(pathInit, pathCopy, err => {
-              if (err) console.log('Copy file', err);
+              if (err) console.log(err.message);
             });
           }
           if (file.isDirectory()) {                                    
